@@ -13,7 +13,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     if(empty(trim($_POST["username"]))){
         $username_err = "Prosím, vložte login.";
     } elseif(!preg_match('/^[a-zA-Z0-9_]+$/', trim($_POST["username"]))){
-        $username_err = "Username can only contain letters, numbers, and underscores.";
+        $username_err = "Login môže obsahovať len písmená, čísla a podčiarníky.";
     } else{
         // Prepare a select statement
         $sql = "SELECT id FROM users WHERE username = ?";
