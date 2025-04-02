@@ -13,4 +13,6 @@ $link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
 if($link === false){
     die("ERROR: Nemôžem sa pripojiť. " . mysqli_connect_error());
 }
+
+ mysqli_set_charset($link, "utf8mb4");
 ?>
