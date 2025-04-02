@@ -97,6 +97,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <style>
         body{ font: 14px sans-serif; background-color: salmon;}
         .wrapper{ width: 360px; padding: 20px; }
+        input{border-radius:3px;}
     </style>
 </head>
 <body>
